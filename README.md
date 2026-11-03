@@ -192,7 +192,3 @@ The main project notebook is intended to contain the end-to-end analysis and mod
 ## ⚠️ Disclaimer
 
 This project is developed for educational purposes as part of a Project Based Learning activity. It is not a clinically validated diagnostic system. Do not use its predictions to make healthcare decisions; consult a qualified medical professional for diagnosis and treatment.
-
----
-
-⭐ If you find this project useful, consider giving the repository a star.
