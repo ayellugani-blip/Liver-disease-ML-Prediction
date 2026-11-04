@@ -24,7 +24,11 @@ The project uses the **Indian Liver Patient Dataset (ILPD)** and follows a stand
 **Dataset:** Indian Liver Patient Dataset (ILPD)  
 **Source:** Kaggle (originally from the UCI Machine Learning Repository)
 
-[View and download the dataset on Kaggle](https://www.kaggle.com/datasets/uciml/indian-liver-patient-records)
+The dataset file included in this repository is:
+
+**[`data/indian_liver_patient.csv`](data/indian_liver_patient.csv)**
+
+You can also access the original dataset on [Kaggle](https://www.kaggle.com/datasets/uciml/indian-liver-patient-records).
 
 | Dataset detail | Description |
 |---|---|
@@ -56,6 +60,17 @@ The dataset's `Dataset` column uses these labels:
 | Total_Protiens | Total protein level |
 | Albumin | Albumin level |
 | Albumin_and_Globulin_Ratio | Albumin-to-globulin ratio |
+
+### Loading the dataset
+
+The CSV is stored in the repository's `data/` directory. From the repository root, load it with Pandas:
+
+```python
+import pandas as pd
+
+df = pd.read_csv("data/indian_liver_patient.csv")
+print(df.head())
+```
 
 ## 🔬 Methodology
 
@@ -143,7 +158,7 @@ python -m venv .venv
 On Windows:
 
 ```bash
-.venv\Scripts\activate
+.venv\\Scripts\\activate
 ```
 
 ### 3. Install dependencies
@@ -162,13 +177,20 @@ Start Jupyter:
 jupyter notebook
 ```
 
-Open the project's `.ipynb` notebook and run its cells in order.
+Open `ML_PBL2_ipynb2.ipynb` and run its cells in order. The dataset is already included at `data/indian_liver_patient.csv`; run the notebook from the repository root so the relative path works.
 
-**Dataset note:** Download the ILPD dataset from the Kaggle link above and place the CSV file at the path expected by the notebook. Update the notebook's dataset path if you store the file elsewhere.
+## 📁 Repository Structure
 
-## 📁 Repository Contents
-
-The main project notebook is intended to contain the end-to-end analysis and model development. Add or update this section as files are committed so that the list reflects the repository's actual contents.
+```text
+Liver-disease-ML-Prediction/
+│
+├── data/
+│   └── indian_liver_patient.csv
+│
+├── ML_PBL2_ipynb2.ipynb
+│
+└── README.md
+```
 
 ## 👥 Team Members
 
